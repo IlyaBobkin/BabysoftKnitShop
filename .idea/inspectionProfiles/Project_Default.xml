@@ -6,7 +6,7 @@
       <option name="myIgnoreVendorSpecificProperties" value="false" />
       <option name="myCustomPropertiesList">
         <value>
-          <list size="11">
+          <list size="12">
             <item index="0" class="java.lang.String" itemvalue="-transition" />
             <item index="1" class="java.lang.String" itemvalue="transform" />
             <item index="2" class="java.lang.String" itemvalue="transform-origin" />
@@ -18,6 +18,7 @@
             <item index="8" class="java.lang.String" itemvalue="transition-property" />
             <item index="9" class="java.lang.String" itemvalue="box-lines" />
             <item index="10" class="java.lang.String" itemvalue="box-sizing" />
+            <item index="11" class="java.lang.String" itemvalue="clip-path" />
           </list>
         </value>
       </option>
