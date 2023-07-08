@@ -21,8 +21,6 @@ video {
 {
   background-image: image("img/shopfon.jpg");
   box-sizing: border-box;
-  margin-top: 5px;
-  padding: 0;
 }
 
 /* Slider */
@@ -138,6 +136,7 @@ video {
   -moz-animation:on 30s infinite;
   animation:on 30s infinite;
 }
+
 
 /* Animation */
 @-webkit-keyframes slide{
@@ -414,10 +413,10 @@ li a.active {
 
 header
 {
-  padding: 5px;
+  margin-top: 2px;
   width: 100%;
   background-color: rgba(255,255,255);
-  border-radius: 20px;
+  border-radius: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
