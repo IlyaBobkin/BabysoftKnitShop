@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        fetch("json/feedback.json")
+            .then(function (response) {
+                return response.json()
+            })
+            .then(function (reviews){
+                let placeholder = document.querySelector("#data-output");
+                let out = "";
+                for (let review of reviews)
+                {
+                    out += review.sender.name + " - " + review.score + '<br>' + review.text + '<br>' + '<br>';
+                }
+                placeholder.innerHTML = out;
+
+            })
+
+    </script>
     <meta charset="utf-8">
     <title>Babysoft Knit</title>
     <meta name="description" content="">
@@ -12,7 +29,7 @@
     <meta property="og:image" content="">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css">
@@ -21,7 +38,6 @@
     <meta name="theme-color" content="#fafafa">
 
     <script>(function () { var widget = document.createElement('script'); widget.dataset.pfId = '8c71c3fc-0e15-41d7-9745-f5624efbd61c'; widget.src = 'https://widget.profeat.team/script/widget.js?id=8c71c3fc-0e15-41d7-9745-f5624efbd61c&now='+Date.now(); document.head.appendChild(widget); })()</script>
-
 </head>
 
 <body background="img/fon3.jpg" style="background-size: cover;">
@@ -50,6 +66,35 @@
 
 
 </header>
+
+
+
+<div style="display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #eeeeee;
+    width: 100%;
+    box-sizing: border-box!important;
+    justify-content: center;
+    margin: 0;
+    flex-flow: column;">
+    <div id="rate-header" style="display: inline-flex">
+        <img src="img/avito.svg" width="60%">
+        <span>
+
+        </span>
+    </div>
+
+    </div>
+
+<table>
+    <tbody id="data-output">
+
+    </tbody>
+</table>
+
 
 
 </body>
