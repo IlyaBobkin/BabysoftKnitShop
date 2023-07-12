@@ -31,7 +31,7 @@
                     out += '<br>'
                     date = new Date(review.createdAt * 1000);
                     out += date.toLocaleString("ru", options) + '<br>';
-                    out += review.text + '<br>' + '<br>';
+                    out += review.text + '<br>' + '<br>' ;
 
                 }
                 placeholder.innerHTML = out;
@@ -91,7 +91,7 @@
 
 
 <div style="display: flex;
-margin-left: 10%;
+margin-left: 25%;
 margin-top: 1%;
     align-items: center;
     padding: 2%;
@@ -100,19 +100,23 @@ margin-top: 1%;
     background-color: rgb(255,255,255);
     border-radius: 10px;
     border: 1px solid #eeeeee;
-    width: 80%;
+    box-shadow: 5px 4px 10px 1px gray;
+    width: 50%;
     box-sizing: border-box;
     justify-content: center;
     flex-flow: column;">
-    <div id="rate-header" style="display: inline-flex; align-items: center; align-self: start">
-        <img src="img/avito.svg" width="30%">
+    <a href="https://www.avito.ru/user/b2b42bf7384291d4fa8dd6dd10e6d35d/profile?src=sharing">
+        <div id="rate-header" style="display: inline-flex; align-items: center; align-self: center">
+        <img src="img/avito.svg" width="30%" style="margin-left: 20%">
         <img src="img/rating.png" width="40%">
         <span>
 
         </span>
     </div>
-    <table>
-        <tbody id="data-output" style="background-color: rgba(234,234,234,0.42)">
+    </a>
+
+    <table style="padding-top: 2%">
+        <tbody id="data-output">
         </tbody>
     </table>
     </div>
