@@ -33,12 +33,13 @@ video {
   font-size: 22px;
   margin: 0 1px;
   line-height: 1;
+  color: #c2c2c2;
 }
 .rating-result > span:before {
   content: '★';
 }
 .rating-result > span.active {
-  color: #eca542;
+  color: #f8a41f;
 }
 
 /* Slider */

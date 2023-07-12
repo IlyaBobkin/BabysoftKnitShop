@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <script>
+        var options = {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            timezone: 'UTC'
+        };
         fetch("json/feedback.json")
             .then(function (response) {
                 return response.json()
@@ -9,16 +15,24 @@
             .then(function (reviews){
                 let placeholder = document.querySelector("#data-output");
                 let out = "";
-                for (let review of reviews)
-                {
+                var date;
+                for (let review of reviews) {
                     i = 0;
-                    out += review.sender.name + "<br>"; /*review.score + '<br>' + review.text + '<br>' + '<br>';*/
-                    while (i < review.score)
-                    {
+                    out += review.sender.name + "<br>" + review.score + " "; /*review.score + '<br>' + review.text + '<br>' + '<br>';*/
+                    while (i < review.score) {
                         out += '<div class="rating-result" style="display: inline"><span class="active"></span></div>'
                         i++;
                     }
-                    out+='<br>'
+                    while (i < 5) {
+                        out += '<div class="rating-result" style="display: inline"><span></span></div>'
+                        i++;
+                    }
+                    out += " Сделка " + review.stage + ": " + review.item.title;
+                    out += '<br>'
+                    date = new Date(review.createdAt * 1000);
+                    out += date.toLocaleString("ru", options) + '<br>';
+                    out += review.text + '<br>' + '<br>';
+
                 }
                 placeholder.innerHTML = out;
 
@@ -78,14 +92,16 @@
 
 <div style="display: flex;
 margin-left: 10%;
-margin-top: 2%;
+margin-top: 1%;
     align-items: center;
-    padding: 3%;
-    background-color: #ffffff;
+    padding: 2%;
+    font-family: Montserrat,sans-serif;
+    font-size: 16px;
+    background-color: rgb(255,255,255);
     border-radius: 10px;
     border: 1px solid #eeeeee;
     width: 80%;
-    box-sizing: border-box!important;
+    box-sizing: border-box;
     justify-content: center;
     flex-flow: column;">
     <div id="rate-header" style="display: inline-flex; align-items: center; align-self: start">
