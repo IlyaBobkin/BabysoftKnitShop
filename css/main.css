@@ -632,7 +632,15 @@ header
 .service_image
 {
   width: 25px;
-  height: 25px
+  height: 25px;
+  transition: all 0.5s ease 0s;
+}
+
+.service_image:hover
+{
+  width: 28px;
+  height: 28px;
+  transition: all 0.5s ease 0s;
 }
 
 
@@ -795,9 +803,12 @@ button:hover{
   padding: 0.5%;
   transition: background-color 0.25s ease-in-out;
   cursor: pointer;
+  justify-content: end;
+  border-radius: 5px;
+  object-fit: fill;
 }
 .table-item:hover
 {
-  background-color: #e8e8e8;
+  background-color: #d3d3d3;
   transition: background-color 0.25s ease-in-out
 }
