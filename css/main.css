@@ -44,7 +44,7 @@ video {
 
 /* Slider */
 #slider{
-  width:100%;
+  width:auto;
   height:90%;
   overflow:hidden;
 }
@@ -78,11 +78,19 @@ video {
 
 /* Legend */
 .legend{
-  border:500px solid transparent;
-  border-left:700px solid rgba(74, 102, 117, 0.9);
+/*  border:500px solid transparent;*/
+/*  border:700px solid rgba(74, 102, 117, 0.9);
+!*  border-left:700px solid rgba(74, 102, 117, 0.9);*!
   border-bottom:0;
   position:absolute;
-  bottom:0;
+  bottom:0;*/
+  width: 50%;
+  height: 50%;
+  background: rgba(74, 102, 117, 0.9);
+  position: absolute;
+  bottom: 0;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(0% 0%, 0% 500%, 100% 100%);
 }
 
 
@@ -805,7 +813,7 @@ button:hover{
 
 .table-item
 {
-  border: 1px solid rgba(194, 194, 194, 0.53);
+  border: 1px solid rgba(210, 210, 210, 0.53);
   width: 30%;
   max-height: 300px;
   padding: 0.5%;
@@ -817,7 +825,7 @@ button:hover{
 }
 .table-item:hover
 {
-  background-color: #d3d3d3;
+  background-color: #e7e7e7;
   transition: all 0.25s ease-in-out
 }
 
