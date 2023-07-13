@@ -20,7 +20,7 @@ video {
 
 *
 {
-  background-image: image("img/shopfon.jpg");
+  background-image: image("img/bg/fon2.jpg");
   box-sizing: border-box;
 }
 
@@ -600,6 +600,11 @@ header
   cursor: pointer;
 }
 
+nav
+{
+  margin-right: 10%;
+}
+
 .nav_links
 {
   list-style: none;
@@ -633,14 +638,14 @@ header
 {
   width: 25px;
   height: 25px;
-  transition: all 0.5s ease 0s;
+  transition: all 0.1s ease 0s;
 }
 
 .service_image:hover
 {
   width: 28px;
   height: 28px;
-  transition: all 0.5s ease 0s;
+  transition: all 0.1s ease 0s;
 }
 
 
@@ -757,13 +762,13 @@ button:hover{
 }
 
 .tabs>input[type="radio"]:checked+label {
-  background-color: #bdbdbd;
+  border:1px solid chocolate;
 }
 
 .tabs>div {
   /* скрыть контент по умолчанию */
   display: none;
-  border: 1px solid #eee;
+  border-top:1px solid chocolate;
   padding: 10px 15px;
   border-radius: 4px;
 }
@@ -782,7 +787,7 @@ button:hover{
   text-align: center;
   vertical-align: middle;
   user-select: none;
-  background-color: #eee;
+  background-color: rgba(238, 238, 238, 0);
   border: 1px solid transparent;
   padding: 2px 8px;
   font-size: 16px;
@@ -800,15 +805,20 @@ button:hover{
 
 .table-item
 {
+  border: 1px solid rgba(194, 194, 194, 0.53);
+  width: 30%;
+  max-height: 300px;
   padding: 0.5%;
-  transition: background-color 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   cursor: pointer;
-  justify-content: end;
   border-radius: 5px;
-  object-fit: fill;
+  object-fit: contain;
+  overflow: hidden;
 }
 .table-item:hover
 {
   background-color: #d3d3d3;
-  transition: background-color 0.25s ease-in-out
+  transition: all 0.25s ease-in-out
 }
+
+

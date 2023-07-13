@@ -18,7 +18,7 @@
                 var date;
                 for (let review of reviews) {
                     i = 0;
-                    out += review.sender.name + "<br>" + review.score + " "; /*review.score + '<br>' + review.text + '<br>' + '<br>';*/
+                    out += review.sender.name + "<br>" + review.score + " ";
                     while (i < review.score) {
                         out += '<div class="rating-result" style="display: inline"><span class="active"></span></div>'
                         i++;
