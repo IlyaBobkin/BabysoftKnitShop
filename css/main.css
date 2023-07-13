@@ -78,12 +78,6 @@ video {
 
 /* Legend */
 .legend{
-/*  border:500px solid transparent;*/
-/*  border:700px solid rgba(74, 102, 117, 0.9);
-!*  border-left:700px solid rgba(74, 102, 117, 0.9);*!
-  border-bottom:0;
-  position:absolute;
-  bottom:0;*/
   width: 50%;
   height: 50%;
   background: rgba(74, 102, 117, 0.9);
@@ -106,7 +100,7 @@ video {
   height:150px;
   float:left;
   position:absolute;
-  top:70%;
+  bottom:15%;
   -webkit-animation:content-s 7.5s infinite;
   -moz-animation:content-s 7.5s infinite;
   animation:content-s 7.5s infinite;
