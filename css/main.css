@@ -628,6 +628,7 @@ header
   background-size: 100% 2px;
 }
 
+
 .service_image
 {
   width: 25px;
@@ -737,3 +738,66 @@ button:hover{
   }
 }
 
+/*tabs*/
+.tabs {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabs>input[type="radio"] {
+  display: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+  background-color: #bdbdbd;
+}
+
+.tabs>div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  border: 1px solid #eee;
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+/* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+#tab-btn-1:checked~#content-1,
+#tab-btn-2:checked~#content-2,
+#tab-btn-3:checked~#content-3,
+#tab-btn-4:checked~#content-4
+{
+  display: block;
+}
+
+.tabs>label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: #eee;
+  border: 1px solid transparent;
+  padding: 2px 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 4px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  margin-left: 6px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.tabs>label:first-of-type {
+  margin-left: 0;
+}
+
+.table-item
+{
+  padding: 0.5%;
+  transition: background-color 0.25s ease-in-out;
+  cursor: pointer;
+}
+.table-item:hover
+{
+  background-color: #e8e8e8;
+  transition: background-color 0.25s ease-in-out
+}
