@@ -1,2 +1,4 @@
+http://localhost:63342/Mom-s-shop/index.html
+
 rating.json: 'curl -L --ssl-no-revoke GET "https://api.avito.ru/ratings/v1/info" -H "Authorization: Bearer gflnGOCXSS-3Aihfob-hqQRYzj03z0V_02fsj1sz" "Content-Type: application/json"'
 feedback.json: 'curl -L --ssl-no-revoke GET "https://api.avito.ru/ratings/v1/reviews?offset=10&limit=50" -H "Authorization: Bearer gflnGOCXSS-3Aihfob-hqQRYzj03z0V_02fsj1sz" "Content-Type: application/json"'
