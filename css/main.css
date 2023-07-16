@@ -823,4 +823,8 @@ button:hover{
   transition: all 0.25s ease-in-out
 }
 
+.info_head
+{
+  font-size: 27px;
+}
 
