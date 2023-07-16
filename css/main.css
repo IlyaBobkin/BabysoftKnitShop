@@ -97,10 +97,10 @@ video {
 }
 .content-txt{
   width:30%;
-  height:20%;
+  height:10%;
   float:left;
   position:absolute;
-  bottom:15%;
+  bottom:22%;
   -webkit-animation:content-s 7.5s infinite;
   -moz-animation:content-s 7.5s infinite;
   animation:content-s 7.5s infinite;
