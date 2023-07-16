@@ -83,7 +83,7 @@ video {
   background: rgba(74, 102, 117, 0.9);
   position: absolute;
   bottom: 0;
-  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(0% 0%, 0% 500%, 100% 100%);
   clip-path: polygon(0% 0%, 0% 500%, 100% 100%);
 }
 
@@ -96,8 +96,8 @@ video {
   overflow:hidden;
 }
 .content-txt{
-  width:400px;
-  height:150px;
+  width:30%;
+  height:20%;
   float:left;
   position:absolute;
   bottom:15%;
@@ -108,7 +108,7 @@ video {
 .content-txt h1{
   font-family: "Merriweather", sans-serif;
   font-weight: 500;
-  font-size:20px;
+  font-size:18px;
   color:#fff;
   text-align:left;
   margin-left:30px;
@@ -116,7 +116,7 @@ video {
 .content-txt h1.price{
   font-family: "Merriweather", sans-serif;
   font-weight: 300;
-  font-size:20px;
+  font-size:18px;
   color: #effd72;
   text-align:left;
   margin-left:30px;
