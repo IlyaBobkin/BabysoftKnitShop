@@ -827,4 +827,9 @@ button:hover{
 {
   font-size: 27px;
 }
-
+#rating,
+#itemname,
+#username
+{
+  display: block;
+}
