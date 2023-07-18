@@ -604,7 +604,7 @@ header
 
 nav
 {
-  margin-right: 10%;
+  margin-right: 22%;
 }
 
 .nav_links
@@ -832,4 +832,14 @@ button:hover{
 #username
 {
   display: block;
+}
+
+.product
+{
+  object-fit: cover;
+  display: flex;
+  width: 500px;
+  height: 550px;
+  overflow: hidden;
+  margin: 10px;
 }
